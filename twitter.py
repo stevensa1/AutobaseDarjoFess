@@ -109,7 +109,7 @@ class Twitter:
                 print("shorted url "+ str(shorted_media_url))
                 tweet = tweet.replace(shorted_media_url, "")
             else:
-                print("kagak ada")
+                print("No url found")
             if type == 'video':
                 videoTweet = VideoTweet(arr)
                 videoTweet.upload_init()
