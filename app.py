@@ -18,6 +18,7 @@ def start():
 
                 if len(message) is not 0 and len(message) < 280:
                     if "sdf!" in message:
+                        message = message.replace("prikitiw", "")
                         if len(message) is not 0:
                             if dms[i]['media'] is None:
                                 print("DM will be posted")
@@ -35,7 +36,7 @@ def start():
                         print("DM will be deleted because does not contains keyword..")
                         tw.delete_dm(id)
 
-                dms = list()
+            dms = list()
 
         else:
             print("Direct message is empty...")
